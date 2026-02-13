@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MS-CONFIGURATION: Radical Tech Specs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@400;700&display=swap');
+      
+      :root {
+        --neon-orange: #ff6b00;
+        --dark-bg: #0a0a0c;
+        --card-bg: #16161a;
+      }
+
+      body { 
+        font-family: 'Inter', sans-serif; 
+        background-color: var(--dark-bg);
+        color: #e2e8f0;
+      }
+
+      .font-radical { font-family: 'Orbitron', sans-serif; }
+
+      /* Custom scrollbar radical */
+      ::-webkit-scrollbar { width: 4px; }
+      ::-webkit-scrollbar-track { background: #000; }
+      ::-webkit-scrollbar-thumb { background: var(--neon-orange); border-radius: 2px; }
+
+      .neon-border {
+        box-shadow: 0 0 10px rgba(255, 107, 0, 0.2);
+        border: 1px solid rgba(255, 107, 0, 0.3);
+      }
+      
+      .neon-text {
+        text-shadow: 0 0 8px rgba(255, 107, 0, 0.6);
+      }
+
+      .btn-radical {
+        background: linear-gradient(135deg, #ff6b00 0%, #d45500 100%);
+        transition: all 0.2s ease;
+      }
+      
+      .btn-radical:active {
+        transform: scale(0.95);
+        box-shadow: 0 0 20px rgba(255, 107, 0, 0.4);
+      }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-[#0a0a0c] text-slate-100">
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
